@@ -5,8 +5,8 @@ public class Vendedor extends Empregado {
 	private int qntVendas;
 
 	public Vendedor(String nome, int idade, String sexo, double salario, String matricula, double valorVendas,
-			int qntVendas,double valorInss) {
-		super(nome, idade, sexo, salario, matricula, valorInss);
+			int qntVendas) {
+		super(nome, idade, sexo, salario, matricula, valorVendas);
 		this.valorVendas = valorVendas;
 		this.qntVendas = qntVendas;
 	}
@@ -27,10 +27,13 @@ public class Vendedor extends Empregado {
 		this.qntVendas = qntVendas;
 	}
 
+	@Override
 	public String toString() {
-		return "Vendedor [valorVendas = " + valorVendas + ", qntVendas = " + qntVendas + ", Salario = " + getSalario()
-				+ ", Matricula = " + getMatricula() + ", Nome = " + getNome() + ", Idade = " + getIdade()
-				+ ", Sexo = " + getSexo() + "]";
+		return "Vendedor [Nome = " + getNome() + ", Idade = " + getIdade() + ", Sexo = " + getSexo()
+				+ ", Salario = " + getSalario() + ", Matricula = " + getMatricula() + ", valorVendas = "
+				+ valorVendas + ", qntVendas = " + qntVendas + "]";
 	}
+
+
 	
 }

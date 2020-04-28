@@ -1,8 +1,8 @@
 package Questao10;
 
-public class Empregado extends Pessoa {
+public abstract class Empregado extends Pessoa {
 
-	private double salario;
+	protected double salario;
 	private String matricula;
 
 	public Empregado(String nome, int idade, String sexo, double salario, String matricula, double valorInss) {
@@ -32,9 +32,5 @@ public class Empregado extends Pessoa {
 		return salario * 0.11;
 	}
 
-	public String toString() {
-		return "Empregado [salario=" + salario + ", matricula=" + matricula + ", Nome = " + getNome()
-				+ ", Idade = " + getIdade() + ", Sexo = " + getSexo() + "]";
-	}
 
 }

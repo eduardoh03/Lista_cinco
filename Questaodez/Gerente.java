@@ -16,11 +16,14 @@ public class Gerente extends Empregado {
 		this.nomeGerencia = nomeGerencia;
 	}
 
-	
+	@Override
 	public String toString() {
-		return "Gerente [nomeGerencia=" + nomeGerencia + ", Salario = " + getSalario() + ", Matricula = "
-				+ getMatricula() + ", Nome = " + getNome() + ", Idade = " + getIdade() + ", Sexo = "
-				+ getSexo() + "]";
+		return "Gerente [Nome = " + getNome() + ", getIdade = " + getIdade() + ", Sexo = " + getSexo()
+				+ ", Salario = " + getSalario() + ", Matricula = " + getMatricula() + ", nomeGerencia="
+				+ nomeGerencia + ",valorINSS = " + Empregado.valorInss(salario)+"]";
 	}
+
+	
+
 
 }

@@ -26,9 +26,11 @@ public class Cliente extends Pessoa {
 		this.anoNascimento = anoNascimento;
 	}
 
+	@Override
 	public String toString() {
-		return "Cliente [valorDivida=" + valorDivida + ", anoNascimento=" + anoNascimento + ", Nome = " + getNome()
-				+ ", Idade = " + getIdade() + ", Sexo = " + getSexo() + "]";
+		return "Cliente [Nome = " + getNome() + ", Idade = " + getIdade() + ", Sexo = " + getSexo()
+				+ ", valorDivida=" + valorDivida + ", anoNascimento=" + anoNascimento + "]";
 	}
-	
+
+
 }
